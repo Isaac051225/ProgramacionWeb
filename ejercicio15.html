@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudiantes y Calificaciones</title>
+    <link rel="stylesheet" href="css/ejercicio15.css">
+</head>
+<body>
+
+    <div class="calculadora">
+        <h1>Gestión de Estudiantes</h1>
+        <p class="subtitulo">Agrega estudiantes y Calcular calificaciones</p>
+
+        <form id="form-estudiantes" onsubmit="return false;">
+            <!-- Campo de entrada Nombre -->
+            <div class="grupo-formulario">
+                <label for="nombre">Nombre del estudiante :</label>
+                <input type="text" id="nombre" placeholder="Ej: Juan">
+            </div>
+
+            <!-- Campo de entrada Calificación -->
+            <div class="grupo-formulario">
+                <label for="calificacion">Calificación :</label>
+                <input type="text" id="calificacion" placeholder="Ej: 85">
+
+            <!-- Botones -->
+            <div class="grupo-formulario" style="display: flex; gap: 10px;"> <!--este estilo display hace que coloque los botones uno a lado del otro -->
+                <button type="button" id="btn-agregar" class="boton-agregar">Agregar estudiante</button>
+                <button type="button" id="btn-calcular" class="boton-calcular">Calcular</button>
+            </div>
+
+            <!-- Cajas de resultado Readonly -->
+            <div class="grupo-formulario">
+                <label for="promedio">Calificación promedio :</label>
+                <input type="text" id="promedio" readonly placeholder="Promedio...">
+
+                <label for="mayor">Estudiante con mayor calificación :</label>
+                <input type="text" id="mayor" readonly placeholder="Más alta...">
+
+                <label for="menor">Estudiante con menor calificación :</label>
+                <input type="text" id="menor" readonly placeholder="Más baja...">
+            </div>
+        </form>
+    </div>
+
+    <!-- Archivo de JavaScript -->
+    <script src="js/ejercicio15.js"></script>
+</body>
+</html>

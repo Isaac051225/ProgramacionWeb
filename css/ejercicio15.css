@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F8F9FA;
+    color: #2B2D42;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculadora {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #927dc1;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.subtitulo {
+    color: #6C757D;
+    font-size: 14px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.grupo-formulario {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #E9ECEF;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+/*este es para cuando el  usuario hace click para escribir el borde cambia a color azul */
+input:focus {
+    border-color: #4CC9F0;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(76, 201, 240, 0.2);
+}
+
+/* Estilo especial para la caja de texto readonly */
+input[readonly] {
+    background-color: #E9ECEF;
+    color: #495057;
+    cursor: not-allowed;
+}
+
+.boton-calcular {
+    width: 100%;
+    background-color: #927dc1;
+    color: white; /* color del texto */
+    border: none;
+    padding: 10px; /* espacio interno del elemento */
+    border-radius: 8px;
+    font-weight: 600;   /* grosor del texto */
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.boton-agregar {
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.boton-calcular:hover {
+    background-color: #2a0880;
+}

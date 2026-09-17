@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de votacion</title>
+    <link rel="stylesheet" href="css/ejercicio13.css">
+</head>
+<body>
+
+    <div class="calculadora">
+        <h1>Verificador</h1>
+        <p class="subtitulo">Verificador de edad</p>
+
+        <form id="form-conversor" onsubmit="return false;">
+            <!-- Campo de entrada edad -->
+            <div class="grupo-formulario">
+                <label for="edad">Edad (años):</label>
+                <input type="text" id="edad" placeholder="Ej: 20">
+                <div id="error-msg" class="mensaje-error">Por favor, ingresa un valor numérico válido.</div>
+            </div>
+
+            <!-- Botón de conversión -->
+            <div class="grupo-formulario">
+                <button type="button" id="btn-convertir" class="boton-convertir">Verificar</button>
+            </div>
+
+            <!-- Caja de resultado Readonly -->
+            <div class="grupo-formulario">
+                <label for="votador">Puedo votar? </label>
+                <input type="text" id="votador" readonly placeholder="Resultado...">
+            </div>
+        </form>
+    </div>
+
+    <!-- Archivo de JavaScript -->
+    <script src="js/ejercicio13.js"></script>
+</body>
+</html>

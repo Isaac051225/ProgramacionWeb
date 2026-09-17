@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arreglos</title>
+    <link rel="stylesheet" href="css/ejercicio14.css">
+</head>
+
+<body>
+
+    <div class="calculadora">
+
+        <h1>Arreglos en JavaScript</h1>
+        <p class="subtitulo">Ingresa números separados por comas</p>
+
+        <form id="form-conversor" onsubmit="return false;">
+
+            <!-- Campo de entrada del arreglo -->
+            <div class="grupo-formulario">
+                <label for="arreglo">Numeros :</label>
+                <input type="text" id="arreglo" placeholder="Ej: 10, 20, 30, 40">
+            </div>
+
+            <!-- Botón de conversión -->
+            <div class="grupo-formulario">
+                <button type="button" id="btn-convertir" class="boton-convertir">Calcular</button>
+            </div>
+
+            <!-- Cajas de resultado Readonly -->
+            <div class="grupo-formulario">
+
+                <label for="mayor">Número mayor :</label>
+                <input type="text" id="mayor" readonly placeholder="Mayor...">
+
+                <label for="menor">Número menor :</label>
+                <input type="text" id="menor" readonly placeholder="Menor...">
+
+                <label for="promedio">Promedio :</label>
+                <input type="text" id="promedio" readonly placeholder="Promedio...">
+
+            </div>
+
+        </form>
+
+    </div>
+
+    <script src="js/ejercicio14.js"></script>
+
+</body>
+</html>
